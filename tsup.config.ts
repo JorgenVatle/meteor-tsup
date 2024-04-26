@@ -5,6 +5,7 @@ export default defineConfig({
     outDir: 'dist',
     skipNodeModulesBundle: true,
     external: ['meteor/*'],
+    ignoreWatch: ['.meteor'],
     target: 'es2022',
     format: "esm"
 })

@@ -2,7 +2,7 @@ import { Meteor } from 'meteor/meteor'
 import { LinksCollection } from '../imports/api/links'
 
 async function insertLink({ title, url }) {
-  await LinksCollection.insertAsync({ title, url, createdAt: new Date() })
+  await LinksCollection.insertAsync({ title, url, createdAt: new Date(Date.now() + 1000) })
 }
 
 Meteor.startup(async () => {
