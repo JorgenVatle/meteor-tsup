@@ -18,7 +18,7 @@
   "meteor": {
     "mainModule": {
       "client": "client/main.js",
-      "server": "server/main.js"
+      "server": "dist/main.mjs"
     },
     "testModule": "tests/main.js"
   },
