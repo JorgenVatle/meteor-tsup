@@ -1,0 +1,34 @@
+{
+  "name": "meteor-tsup",
+  "private": true,
+  "scripts": {
+    "start": "MONGO_URL=mongodb://localhost:27017 meteor run",
+    "build": "meteor build ../output/vue --directory",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "meteor-node-stubs": "^1.2.7",
+    "vue": "^3.3.9",
+    "vue-meteor-tracker": "^3.0.0-beta.7",
+    "vue-router": "^4.2.5"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@types/meteor": "^2.9.7",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "autoprefixer": "^10.4.16",
+    "meteor-vite": "^1.10.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^3.2.7"
+  }
+}
