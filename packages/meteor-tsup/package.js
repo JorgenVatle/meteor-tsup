@@ -1,5 +1,6 @@
 const dependencies = {
   ecmascript: 'ecmascript@0.16.8 || 1.0.0',
+  compilerPlugin: 'isobuild:compiler-plugin@1.0.0',
 }
 
 Package.describe({
@@ -18,5 +19,8 @@ Package.registerBuildPlugin({
   sources: ['src/plugin.js'],
 });
 
-Package.onUse(function(api) {});
+Package.onUse(function(api) {
+  api.use(dependencies.ecmascript);
+  api.use(dependencies.compilerPlugin);
+});
 
