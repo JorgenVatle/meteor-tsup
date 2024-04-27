@@ -6,3 +6,8 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+# Things we probably won't need to keep track of.
+compiler.xml
+vcs.xml
+php.xml
