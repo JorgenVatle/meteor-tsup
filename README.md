@@ -103,3 +103,6 @@ TypeScript modules individually. This is not only slow, but it also comes with
 Particularly, some modules might not be compiled without emitting any sort of warning message. Leading to issues at 
 runtime where some modules might just not exist in your bundle. This can be incredibly tricky to debug, especially for
 larger applications.
+
+## License
+MIT
