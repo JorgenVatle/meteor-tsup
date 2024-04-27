@@ -23,7 +23,7 @@
     "testModule": "tests/main.js"
   },
   "devDependencies": {
-    "@types/meteor": "^2.9.7",
+    "@types/meteor": "^2.9.8",
     "@vitejs/plugin-vue": "^3.2.0",
     "autoprefixer": "^10.4.16",
     "meteor-vite": "^1.10.3",
