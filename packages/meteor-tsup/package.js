@@ -1,5 +1,5 @@
 const dependencies = {
-  ecmascript: 'ecmascript@0.16.8 || 1.0.0',
+  ecmascript: 'ecmascript@0.16.8 || 0.16.8-beta300.6 || 0.16.8-rc300.0 || 1.0.0',
   compilerPlugin: 'isobuild:compiler-plugin@1.0.0',
 }
 
