@@ -22,6 +22,9 @@ to run the `tsup` watcher alongside Meteor.
 # Install the build plugin
 meteor add jorgenvatle:tsup
 
+# If you're using Meteor v3, install the beta version instead
+# meteor add jorgenvatle:tsup@2.0-beta.0
+
 # Install npm dependencies
 meteor npm i -D tsup concurrently
 ```
