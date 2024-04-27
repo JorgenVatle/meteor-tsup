@@ -15,7 +15,7 @@ Package.registerBuildPlugin({
   use: [
     dependencies.ecmascript,
   ],
-  sources: ['plugin.js'],
+  sources: ['src/plugin.js'],
 });
 
 Package.onUse(function(api) {});
