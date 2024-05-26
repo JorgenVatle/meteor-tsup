@@ -36,11 +36,7 @@ import { defineConfig } from 'tsup';
 
 export default defineConfig({
     target: 'node14', // For Meteor v3 you'll probably want to use 'node21'
-    entry: {
-        // Replace 'server/main.ts' with the path to your Meteor server's 
-        // mainModule configured in your package.json.
-        'esbuild.bundle': 'server/main.ts', 
-    },
+    entry: ['./server/main.ts'],
     outDir: 'server/_bundle',
     skipNodeModulesBundle: true,
     sourcemap: true,
@@ -90,7 +86,7 @@ Create a `server/main.js` file to import your TSUp build output.
 
 ```js
 // server/main.js
-import './_bundle/main.esbuild.bundle.server';
+import './_bundle/main.server.js';
 ```
 
 Now, just launch Meteor using your updated start script. And you're all set.
