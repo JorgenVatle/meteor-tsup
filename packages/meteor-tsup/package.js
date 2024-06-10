@@ -1,11 +1,11 @@
 const dependencies = {
-  ecmascript: 'ecmascript@0.16.8 || 0.16.8-beta300.6 || 0.16.8-rc300.0 || 1.0.0',
+  ecmascript: 'ecmascript@0.16.8',
   compilerPlugin: 'isobuild:compiler-plugin@1.0.0',
 }
 
 Package.describe({
   name: 'jorgenvatle:tsup',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Pre-bundle and watch Meteor project files using ESBuild with source map support.',
   git: 'https://github.com/JorgenVatle/meteor-tsup',
   documentation: 'README.md'
