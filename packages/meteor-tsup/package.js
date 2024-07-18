@@ -9,7 +9,7 @@ const major = isMeteorV2 ? '1' : '2';
 
 Package.describe({
   name: 'jorgenvatle:tsup',
-  version: `${major}.0.1`,
+  version: `${major}.0.2`,
   summary: 'Pre-bundle and watch Meteor project files using ESBuild with source map support.',
   git: 'https://github.com/JorgenVatle/meteor-tsup',
   documentation: 'README.md'
