@@ -3,7 +3,8 @@ const dependencies = {
   compilerPlugin: 'isobuild:compiler-plugin@1.0.0',
 }
 
-const isMeteorV2 = process.env.METEOR_RELEASE?.startsWith('2');
+const { METEOR_RELEASE } = Object.assign({ METEOR_RELEASE: '2.0.0' }, process.env);
+const isMeteorV2 = METEOR_RELEASE?.startsWith('2');
 const major = isMeteorV2 ? '1' : '2';
 
 Package.describe({
@@ -23,8 +24,8 @@ Package.registerBuildPlugin({
 });
 
 Package.onUse(function(api) {
-  if (process.env.METEOR_RELEASE) {
-    console.log('📦  Preparing package for Meteor release:', process.env.METEOR_RELEASE);
+  if (METEOR_RELEASE) {
+    console.log('📦  Preparing package for Meteor release:', METEOR_RELEASE);
   }
 
   if (isMeteorV2) {
