@@ -32,7 +32,7 @@ Create a `tsup.config.ts` config file in your Meteor project's root directory.
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-    target: 'node14', // For Meteor v3 you'll probably want to use 'node21'
+    target: 'node21', // For Meteor v2 you'll probably want to use 'node14'
     entry: ['./server/main.ts'],
     outDir: 'server/_bundle',
     skipNodeModulesBundle: true,
