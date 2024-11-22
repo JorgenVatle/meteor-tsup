@@ -22,9 +22,6 @@ to run the `tsup` watcher alongside Meteor.
 # Install the build plugin
 meteor add jorgenvatle:tsup
 
-# If you're using Meteor v3, install the beta version instead
-# meteor add jorgenvatle:tsup@2.0-beta.3
-
 # Install npm dependencies
 meteor npm i -D tsup concurrently
 ```
@@ -35,7 +32,7 @@ Create a `tsup.config.ts` config file in your Meteor project's root directory.
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-    target: 'node14', // For Meteor v3 you'll probably want to use 'node21'
+    target: 'node21', // For Meteor v2 you'll probably want to use 'node14'
     entry: ['./server/main.ts'],
     outDir: 'server/_bundle',
     skipNodeModulesBundle: true,
